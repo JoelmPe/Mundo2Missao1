@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!--BOTSATP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- REF CSS-->
+    <link rel="stylesheet" type="text/css" href="formato.css"/>
+    <link rel="stylesheet" href="./styles/formulario.css">
+
+    <title>Cadastre-se</title>
+  </head>
+    <body>
+      <nav class="navbar col-12 m-auto position-fixed navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler shadow-sm" data-bs-toggle="collapse" data-bs-target="#nav_links"
+              aria-label="Toggle Navbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <div id="nav_links" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="receitas.html">Receitas</a></li>
+                  <li class="nav-item active"><a class="nav-link active" href="cadastro.html">Cadastro</a></li>
+              </ul>
+          </div>
+      </nav>
+    <main class="container">
+      <form action="https://formspree.io/f/mvonnpze" method="POST">
+        <br><br><br>
+        <div class="row">
+         <h1>Cadastre-se</h1>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col col-md-10">
+                <div class="mb-3 row">
+                    <label for="nome" class="col-md-2 col-form-label">Nome</label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="nome" required >
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-7">
+                        <input type="email" class="form-control" id="email" required >
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="cep" class="col-md-2 col-form-label">CEP</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="cep" required >
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="rua" class="col-md-2 col-form-label">Rua</label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="rua" required >
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="numero" class="col-md-2 col-form-label">Numero</label>
+                    <div class="col-md-2">
+                        <input type="numero" class="form-control" id="numero" required >
+                    </div>
+
+                    <label for="complemento" class="col-md-2 col-form-label">Complemento</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="complemento" required>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="cidade" class="col-md-2 col-form-label">Cidade</label>
+                    <div class="col-md-4 mb-2">
+                        <input type="numero" class="form-control" id="cidade" required >
+                    </div>
+
+                    <label for="uf" class="col-md-1 col-form-label">UF</label>
+                    <div class="col-md-2 mb-2">
+                        <input type="text" class="form-control" id="uf" required>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button type="submit" class="form-control mb-2 btn btn-dark">
+                            Cadastrar
+                           
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="assunto" value="Dados para envio de formulário">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+          </div>
+    </main>
+  
+      <footer class='text-center'>
+        &copy;Joelma2023
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
